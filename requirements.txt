@@ -1,0 +1,27 @@
+fastapi
+uvicorn[standard]
+streamlit
+requests
+python-dotenv
+
+# --- LlamaIndex Core & Integrations ---
+llama-index
+llama-index-llms-google-genai
+llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma
+
+# --- Data Parsing & Processing ---
+# "unstructured" with "hi_res" strategy requires specific extras.
+# Using [local-inference] is a robust way to include necessary components.
+unstructured[local-inference]
+# For PDF processing, "unstructured" often relies on system dependencies.
+# On Debian/Ubuntu: sudo apt-get install poppler-utils tesseract-ocr
+# On MacOS: brew install poppler tesseract
+pypdf 
+
+# --- Vector Database ---
+chromadb
+
+# --- For HuggingFace Embeddings ---
+torch
+sentence-transformers
