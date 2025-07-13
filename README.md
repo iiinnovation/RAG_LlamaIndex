@@ -11,10 +11,10 @@
 
 本项目旨在提供一个完整的、开箱即用的 RAG 解决方案，其核心流程如下：
 
-1.  **数据处理 (Ingestion):** 使用 `unstructured` 库高精度地解析 PDF 文档（包括表格），并通过 `LlamaIndex` 的 `SemanticSplitterNodeParser` 进行语义感知的智能文本分块。
-2.  **向量化与存储 (Embedding & Storage):** 使用 `BAAI/bge-large-zh-v1.5` 这个强大的中英双语模型将文本块转换为向量，并存储在本地的 `ChromaDB` 向量数据库中。
-3.  **后端服务 (Backend):** 基于 `FastAPI` 构建 API 服务，接收查询请求，通过 RAG 流程（检索、增强、生成）调用 `Google Gemini 1.5 Pro` 模型生成答案及来源。
-4.  **前端界面 (Frontend):** 使用 `Streamlit` 创建一个交互式的聊天应用，用户可以方便地进行提问和查看结果。
+1.  **数据处理 :** 使用 `unstructured` 库高精度地解析 PDF 文档（包括表格），并通过 `LlamaIndex` 的 `SemanticSplitterNodeParser` 进行语义感知的智能文本分块。
+2.  **向量化与存储 :** 使用 `BAAI/bge-large-zh-v1.5` 这个强大的中英双语模型将文本块转换为向量，并存储在本地的 `ChromaDB` 向量数据库中。
+3.  **后端服务:** 基于 `FastAPI` 构建 API 服务，接收查询请求，通过 RAG 流程（检索、增强、生成）调用 `Google Gemini 1.5 Pro` 模型生成答案及来源。
+4.  **前端界面:** 使用 `Streamlit` 创建一个交互式的聊天应用，用户可以方便地进行提问和查看结果。
 
 ## ✨ 主要特性
 
